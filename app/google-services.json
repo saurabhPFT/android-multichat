@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "729089274345",
+    "firebase_url": "https://multichat-c7998.firebaseio.com",
+    "project_id": "multichat-c7998",
+    "storage_bucket": "multichat-c7998.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:729089274345:android:da1d701c5eb48bef935b78",
+        "android_client_info": {
+          "package_name": "com.saurabh.multichat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "729089274345-g237mfqv61jdk22n66feuf76pmohvs2v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4ekWUFHxtE5CdfOMpS5ML4e4f-j7i2w8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "729089274345-g237mfqv61jdk22n66feuf76pmohvs2v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
