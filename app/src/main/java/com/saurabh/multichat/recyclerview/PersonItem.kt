@@ -3,6 +3,7 @@ package com.saurabh.multichat.recyclerview
 import android.content.Context
 import com.bumptech.glide.Glide
 import com.saurabh.multichat.R
+import com.saurabh.multichat.glide.GlideApp
 import com.saurabh.multichat.model.User
 import com.saurabh.multichat.util.StorageUtil
 import com.xwray.groupie.kotlinandroidextensions.Item
@@ -17,7 +18,7 @@ class PersonItem(val person: User,
         viewHolder.textView_name.text=person.name
         viewHolder.textView_bio.text=person.bio
         if(person.profilePicturePath!=null){
-            Glide.with(context)
+            GlideApp.with(context)
                 .load(StorageUtil.pathToReference(person.profilePicturePath))
                 .placeholder(R.drawable.ic_account_circle_black_24dp)
                 .into(viewHolder.imageView_profile_picture)

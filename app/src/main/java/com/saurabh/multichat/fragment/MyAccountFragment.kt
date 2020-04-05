@@ -14,6 +14,7 @@ import com.firebase.ui.auth.AuthUI
 
 import com.saurabh.multichat.R
 import com.saurabh.multichat.SigninActivity
+import com.saurabh.multichat.glide.GlideApp
 import com.saurabh.multichat.util.FirestoreUtil
 import com.saurabh.multichat.util.StorageUtil
 import kotlinx.android.synthetic.main.fragment_my_account.*
@@ -80,7 +81,7 @@ class MyAccountFragment : Fragment() {
             selectedImageBmp.compress(Bitmap.CompressFormat.JPEG, 90, outputStream)
             selectedImageBytes = outputStream.toByteArray()
 
-            Glide.with(this)
+            GlideApp.with(this)
                 .load(selectedImageBytes)
                 .into(imageView_profile_picture)
 
@@ -95,11 +96,11 @@ class MyAccountFragment : Fragment() {
                 editText_name.setText(user.name)
                 editText_bio.setText(user.bio)
                 if (!pictureJustChanged && user.profilePicturePath != null)
-                    Glide.with(this)
+                    GlideApp.with(this)
                         .load(StorageUtil.pathToReference(user.profilePicturePath))
                         .placeholder(R.drawable.ic_account_circle_black_24dp)
                         .into(imageView_profile_picture)
-            }
+          }
         }
     }
 

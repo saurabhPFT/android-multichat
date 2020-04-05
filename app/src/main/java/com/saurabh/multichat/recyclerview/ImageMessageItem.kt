@@ -3,6 +3,7 @@ import android.content.Context
 import com.bumptech.glide.Glide
 import com.resocoder.firemessage.recyclerview.item.MessageItem
 import com.saurabh.multichat.R
+import com.saurabh.multichat.glide.GlideApp
 import com.saurabh.multichat.model.ImageMessage
 import com.saurabh.multichat.util.StorageUtil
 import com.xwray.groupie.kotlinandroidextensions.ViewHolder
@@ -15,7 +16,7 @@ class ImageMessageItem(val message: ImageMessage,
 
     override fun bind(viewHolder: ViewHolder, position: Int) {
         super.bind(viewHolder, position)
-        Glide.with(context)
+        GlideApp.with(context)
                 .load(StorageUtil.pathToReference(message.imagePath))
                 .placeholder(R.drawable.ic_image_black_24dp)
                 .into(viewHolder.imageView_message_image)

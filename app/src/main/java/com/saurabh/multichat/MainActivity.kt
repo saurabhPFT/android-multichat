@@ -35,7 +35,6 @@ class MainActivity : AppCompatActivity() {
 
                 // Log and toast
 
-                Toast.makeText(baseContext, token.toString(), Toast.LENGTH_SHORT).show()
                 MyFirebaseMessagingService.addTokenToFirestore(token)
             })
 
